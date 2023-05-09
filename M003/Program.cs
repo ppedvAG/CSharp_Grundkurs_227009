@@ -124,7 +124,6 @@
 
             Console.WriteLine(zahlen.Contains(10) ? "zahlen enthält 10" : "zahlen enthält nicht 10");
             #endregion
-
         }
 	}
 }
