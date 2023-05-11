@@ -79,6 +79,9 @@ internal class Program
 
 			Console.WriteLine(lebewesen.ToString());
         }
+
+		Random r = new Random();
+		r.Next(0, 10); //Zufallszahl zwischen 0 und 9 (Obergrenze exkludiert)
 	}
 }
 
