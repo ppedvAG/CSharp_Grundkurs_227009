@@ -1,0 +1,29 @@
+﻿<Window x:Class="M014.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M014"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+	<StackPanel Margin="10">
+		<Menu>
+			<MenuItem Header="Datei">
+				<MenuItem Header="Beenden">
+					<MenuItem Header="Daneben" Click="MenuItem_Click">
+					</MenuItem>
+				</MenuItem>
+			</MenuItem>
+		</Menu>
+		<Button Height="30" Content="Ein Button" Click="Button_Click"/>
+		<TextBlock Text="ABC" TextAlignment="Center" FontSize="18" Foreground="Blue" Name="TB"/>
+		<ComboBox Name="CB" SelectionChanged="CB_SelectionChanged"/>
+		<ListBox Name="LB" SelectionChanged="LB_SelectionChanged" SelectionMode="Extended"/>
+		<CheckBox Content="CheckBox1" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" IsChecked="True"/>
+		<RadioButton Content="RB1" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" GroupName="RB1"/>
+		<RadioButton Content="RB2" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" GroupName="RB1"/>
+		<RadioButton Content="RB3" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" GroupName="RB1"/>
+		<RadioButton Content="RB1" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" GroupName="RB2"/>
+		<RadioButton Content="RB2" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" GroupName="RB2"/>
+	</StackPanel>
+</Window>
